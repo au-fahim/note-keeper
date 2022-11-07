@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Keeper</title>
+
+    <link
+      rel="stylesheet"
+      href="./uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main id="main-body">
+      <header class="top-header">
+        <!-- side menu show/hide button -->
+        <a href="#" class="show-hide-btn">
+          <i class="fi-rr-menu-burger"></i>
+        </a>
+
+        <!-- Header logo -->
+        <div class="logo">
+          <strong>N</strong>
+          <h3>ote</h3>
+          <!-- <span>&nbsp;</span> -->
+          <strong>K</strong>
+          <h3>eeper</h3>
+        </div>
+
+        <!-- header search bar -->
+        <div class="search-wrapper">
+          <i class="fi-rr-search"> </i>
+          <input type="text" name="" id="search-bar" placeholder="Search" />
+        </div>
+
+        <!-- header user-profile-bar -->
+        <div class="user-profile-bar">
+          <button class="top-header-btn reload-btn">
+            <i class="fi-rr-rotate-right"></i>
+          </button>
+          <button class="top-header-btn grid-view-btn">
+            <i class="fi-rr-grid"></i>
+          </button>
+          <button class="top-header-btn notification-view-btn">
+            <i class="fi-rr-bell"></i>
+          </button>
+          <button class="top-header-btn user-profile-view-btn">
+            <i class="fi-rr-user"></i>
+          </button>
+        </div>
+      </header>
+      <nav class="left-side-nav">
+        <a href="#" class="side-nav-item">
+          <i class="fi-rr-notebook"></i>
+          <span>Notes</span>
+        </a>
+        <a href="#" class="side-nav-item">
+          <i class="fi-rr-stopwatch"></i>
+          <span>Reminders</span>
+        </a>
+
+        <span class="devidor"> </span>
+
+        <a href="#" class="side-nav-item">
+          <i class="fi-rr-box"></i>
+          <span>Archive</span>
+        </a>
+        <a href="#" class="side-nav-item">
+          <i class="fi-rr-trash"></i>
+          <span>Trash</span>
+        </a>
+
+        <span class="devidor"> </span>
+
+        <a href="#" class="side-nav-item">
+          <i class="fi-rr-settings"></i>
+          <span>Settings</span>
+        </a>
+
+        <a href="#" class="side-nav-item">
+          <i class="fi-rr-comment"></i>
+          <span>Send feedbacks</span>
+        </a>
+
+        <a href="#" class="side-nav-item">
+          <i class="fi-rr-interrogation"></i>
+          <span>Help</span>
+        </a>
+
+        <a href="#" class="side-nav-item">
+          <i class="fi-rr-keyboard"></i>
+          <span>Keyboard Shortcuts</span>
+        </a>
+      </nav>
+
+      <!-- Create Note Section -->
+      <section id="create-note">
+        <div class="pin-note-btn"><i class="fi-rr-thumbtack"></i></div>
+
+        <div class="create-note-wrapper">
+          <input
+            type="text"
+            id=""
+            class="create-note-title"
+            placeholder="Title"
+            spellcheck="true"
+          />
+          <input
+            type="text"
+            id=""
+            class="create-note-text"
+            placeholder="Take a note"
+            spellcheck="true"
+          />
+        </div>
+        <div class="create-note-modifyer">
+          <ul class="note-modifyer-wrapper">
+            <li class="note-modify-item note-add-picture">
+              <i class="fi-rr-picture"></i>
+            </li>
+            <li class="note-modify-item note-add-link">
+              <i class="fi-rr-clip"></i>
+            </li>
+            <li class="note-modify-item note-add-map">
+              <i class="fi-rr-map-marker"></i>
+            </li>
+            <li class="note-modify-item note-add-reminder">
+              <i class="fi-rr-alarm-clock"></i>
+            </li>
+            <li class="note-modify-item note-add-color">
+              <i class="fi-rr-palette"></i>
+            </li>
+            <li class="note-modify-item note-add-archive">
+              <i class="fi-rr-box"></i>
+            </li>
+            <li class="note-modify-item note-add-undo">
+              <i class="fi-rr-undo"></i>
+            </li>
+            <li class="note-modify-item note-add-redo">
+              <i class="fi-rr-redo"></i>
+            </li>
+            <li class="note-modify-item note-add-more">
+              <i class="fi-rr-menu-dots-vertical"></i>
+            </li>
+          </ul>
+          <a href="#" class="note-close-btn">Cancel</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

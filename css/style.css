@@ -1,0 +1,336 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:wght@600;700&family=Orbitron:wght@700&family=Roboto:wght@300;400;500&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Montserrat:wght@600;700&family=Press+Start+2P&family=Roboto:wght@300;400;500&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Monoton&family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap");
+
+/* 
+panding list -->
+font-family: 'Abril Fatface', cursive;
+font-family: 'Carter One', cursive;
+font-family: 'Marcellus', serif;
+font-family: 'Orbitron', sans-serif;
+
+selected font -->
+font-family: 'Press Start 2P', cursive;
+font-family: 'Akaya Telivigala', cursive;
+font-family: 'Monoton', cursive;
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+
+*/
+
+:root {
+  --header-font: "Montserrat", sans-serif;
+  --primary-font: "Roboto", sans-serif;
+  --logo-font: "Akaya Telivigala", cursive;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+main#main-body {
+  display: grid;
+  grid-template-columns: 4rem repeat(11, 1fr);
+  background: #efefef;
+}
+
+header.top-header {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 4rem repeat(11, 1fr);
+  align-items: center;
+  height: 60px;
+  /* border: 1px solid blueviolet; */
+  position: fixed;
+  z-index: 999;
+  background: white;
+  width: 100%;
+}
+
+.logo {
+  grid-column: 2 / 3;
+  font-size: 2rem;
+  font-family: var(--logo-font);
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease;
+  justify-content: center;
+  color: #009688;
+}
+
+.search-wrapper {
+  grid-column: 4 / 9;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 5px;
+  /* border: 1px solid #efefef; */
+  overflow: hidden;
+  height: 70%;
+  background: #00968817;
+  color: #767676;
+}
+
+.search-wrapper input {
+  width: 92%;
+  display: block;
+  border: none;
+  height: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #767676;
+  background: transparent;
+}
+
+.search-wrapper i {
+  cursor: pointer;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-profile-bar {
+  grid-column: 10 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button.top-header-btn i {
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 0.5rem;
+  border-radius: 50px;
+  color: gray;
+}
+
+button.top-header-btn {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification-view-btn {
+  position: relative;
+}
+
+.notification-view-btn:before {
+  content: "";
+  position: absolute;
+  height: 0.7rem;
+  width: 0.7rem;
+  background: #eb2525;
+  border-radius: 30px;
+  right: 18%;
+  top: 10%;
+  border: 2px solid white;
+}
+
+.user-profile-view-btn {
+  margin-left: 0.5rem;
+  border: 1px solid #efefef;
+  border-radius: 50px;
+}
+
+/* Side Menu */
+
+nav.left-side-nav {
+  grid-column: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  background: aliceblue;
+  margin-right: -6rem;
+  height: 100vh;
+  position: relative;
+  top: 0px;
+  padding-top: 5rem;
+  transition: 0.5s ease;
+  /* max-width: 4rem; */
+  /* max-width: 15rem; */
+}
+
+a.side-nav-item {
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  /* background: #e6f1fb; */
+  border-radius: 0 40px 40px 0;
+  color: gray;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  /* transition: 0.5s ease; */
+}
+
+a.side-nav-item:hover {
+  background: #00968817;
+  color: #009688;
+}
+
+span.devidor {
+  margin: 0.5rem 0;
+  height: 1px;
+  background: #daf0f4;
+}
+
+a.side-nav-item i {
+  padding: 0.5rem;
+  /* background: black; */
+  border-radius: 50px;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+a.show-hide-btn i {
+  font-size: 1.2rem;
+  display: inline-block;
+  color: #333;
+  height: 2.2rem;
+  padding: 0.5rem;
+  border-radius: 50px;
+  /* background: aliceblue; */
+  /* background: #00968817; */
+  color: #009688;
+}
+
+a.show-hide-btn {
+  grid-column: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.side-nav-item span {
+  margin-left: 1rem;
+  font-size: 1rem;
+  /* opacity: 0; */
+  transform: scaleX(1);
+  transform-origin: left;
+  /* transition: 0.5s ease; */
+}
+
+section#create-note {
+  grid-column: 5 / span 6;
+  margin-top: 6rem;
+  padding: 0.5rem;
+  /* border: 1px solid darkgray; */
+  border-radius: 5px;
+  height: min-content;
+  position: relative;
+  background: white;
+  box-shadow: 1px 1px 8px #cfcfcf;
+}
+
+.pin-note-btn {
+  position: absolute;
+  right: 20px;
+  top: -10px;
+}
+
+.pin-note-btn i {
+  display: flex;
+  padding: 0.4rem;
+  background: white;
+  /* border: 1px solid; */
+  border-radius: 40px;
+  position: absolute;
+  box-shadow: 1px 1px 8px #cfcfcf;
+  cursor: pointer;
+  background: lavender;
+  color: #767676;
+  background: #efefef;
+}
+
+.create-note-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 0.8rem;
+  /* border: 1px solid darkgray; */
+  border-radius: 5px;
+  background: #efefef;
+}
+
+.create-note-wrapper input {
+  padding: 0.6rem 0.4rem;
+  border-style: none;
+  outline: none;
+  overflow-wrap: break-word;
+  background: transparent;
+}
+
+input.create-note-title {
+  color: #333;
+  border-bottom: 1px solid darkgray;
+  font-family: var(--header-font);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+input.create-note-text {
+  color: #343434;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1rem;
+  /* overflow-wrap: break-word; */
+  height: min-content;
+  border: none;
+}
+
+.create-note-modifyer {
+  margin: 1rem auto 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.note-modifyer-wrapper {
+  display: flex;
+  padding: 0 0.5rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+li.note-modify-item i {
+  display: inline-flex;
+  padding: 0.6rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.4s ease;
+  color: #767676;
+}
+
+a.note-close-btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  background: #efefef;
+  color: #333;
+}
+
+li.note-modify-item i:hover {
+  background: #efefefef;
+}

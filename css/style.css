@@ -68,6 +68,7 @@ header.top-header {
   z-index: 999;
   background: white;
   width: 100%;
+  box-shadow: 1px 2px 11px -2px #ebebeb;
 }
 
 .logo {
@@ -76,9 +77,29 @@ header.top-header {
   font-family: var(--logo-font);
   display: flex;
   align-items: center;
-  transition: all 0.5s ease;
-  justify-content: center;
-  color: #009688;
+  justify-content: left;
+  color: #ffc107;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.logo .h3 {
+  transform: scale3d(0, 0, 1);
+  transition: 0.5s cubic-bezier(0.4, 0, 1, 1);
+  transform-origin: left;
+  opacity: 0;
+  width: 0%;
+}
+
+.logo:hover .h3 {
+  opacity: 1;
+  width: 100%;
+  transform: scale3d(1, 1, 1);
+}
+
+.h3 h3 {
+    transition: text-color 0.1s;
+    margin-right: 0.5rem;
 }
 
 .search-wrapper {
@@ -177,7 +198,8 @@ button.top-header-btn {
 /* Side Menu */
 
 nav.left-side-nav {
-  grid-column: 1 / 3;
+  /* grid-column: 1 / 3; */
+  grid-column: 1;
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
@@ -188,10 +210,21 @@ nav.left-side-nav {
   top: 0px;
   padding-top: 5rem;
   transition: 0.5s ease;
-  /* max-width: 4rem; */
+  max-width: 4rem;
   /* max-width: 15rem; */
   background: white;
 }
+
+/* nav.left-side-nav::before {
+    content: "";
+    position: absolute;
+    top: 3.7rem;
+    right: -4.9rem;
+    width: 5rem;
+    height: 5rem;
+    background: white;
+    clip-path: polygon(63% 9%, 77% 4%, 86% 2%, 100% 0%, 0% 0%, 0% 100%, 1% 86%, 4% 73%, 8% 62%, 15% 50%, 22% 40%, 32% 28%, 41% 21%, 51% 15%);
+} */
 
 a.side-nav-item {
   padding: 0rem 1rem 0rem 0rem;
@@ -235,7 +268,7 @@ a.show-hide-btn i {
   height: 2.2rem;
   padding: 0.5rem;
   border-radius: 50px;
-  color: #009688;
+  /* color: #009688; */
 }
 
 a.show-hide-btn i:hover {
@@ -258,6 +291,7 @@ a.side-nav-item span {
   transform: scaleX(1);
   transform-origin: left;
   /* transition: 0.5s ease; */
+  display: none;
 }
 
 section#create-note {
@@ -302,7 +336,7 @@ section#create-note {
   padding: 0.8rem 0.8rem;
   /* border: 1px solid darkgray; */
   border-radius: 5px;
-  background: #f9f9f9;
+  background: #f7f7f7;
 }
 
 .create-note-wrapper input {
@@ -397,4 +431,30 @@ a.label-items {
 
 a.label-items i {
   transform: rotate(-45deg) scaleY(1.3);
+}
+
+/* Node Item Design */
+
+section#note-items-wrapper {
+  grid-column: 4 / -2;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30%);
+  gap: 2rem; /* display: flex; */ /* flex-direction: row; */ /* flex-wrap: wrap; */
+  justify-content: center;
+}
+
+.note-item {
+  padding: 1rem 1.2rem;
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+h3.note-item-title {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+p.note-item-text {
+    color: #444;
 }

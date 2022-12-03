@@ -282,9 +282,14 @@ a.show-hide-btn i {
 }
 
 a.show-hide-btn i:hover {
+<<<<<<< HEAD
   background: var(--clr-yellow);
   color: var(--clr-white);
   /* background: #7d94b5; */
+=======
+    background: #f5f5f5;
+    color: #191919;
+>>>>>>> fa42e0bb913b2709a5e0bd76ea826221a1e667bf
 }
 
 a.show-hide-btn {
@@ -483,8 +488,12 @@ h3.note-item-title {
 }
 
 p.note-item-text {
+<<<<<<< HEAD
   color: var(--clr-font);
   font-size: 0.9rem;
   line-height: 1.5;
   letter-spacing: 0.2px;
+=======
+    color: #444;
+>>>>>>> fa42e0bb913b2709a5e0bd76ea826221a1e667bf
 }

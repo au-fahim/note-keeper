@@ -1,24 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:wght@600;700&family=Orbitron:wght@700&family=Roboto:wght@300;400;500&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Montserrat:wght@600;700&family=Press+Start+2P&family=Roboto:wght@300;400;500&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Monoton&family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap");
-
-/* 
-panding list -->
-font-family: 'Abril Fatface', cursive;
-font-family: 'Carter One', cursive;
-font-family: 'Marcellus', serif;
-font-family: 'Orbitron', sans-serif;
-
-selected font -->
-font-family: 'Press Start 2P', cursive;
-font-family: 'Akaya Telivigala', cursive;
-font-family: 'Monoton', cursive;
-
-font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif;
-
-
-*/
 
 :root {
   --header-font: "Montserrat", sans-serif;
